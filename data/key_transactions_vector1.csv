@@ -1,0 +1,27 @@
+Date/Time (UTC),Sender,Recipient,Amount (USDT),Note
+03.04.2026 09:40,qrfv (Binance hot wallet),TWRXj4SD,"49,999,999.00",Binance withdrawal · TX 774ccb35…87cfd
+03.04.2026 10:49,qrfq (Binance hot wallet),TWRXj4SD,"49,499,999.00",Binance withdrawal · TX d1bece0c…be7d7
+03.04.2026 10:53,qrfj (Binance hot wallet),TWRXj4SD,"600,451.74",Binance withdrawal · TX 8a6d0da3…424c01
+16.04.2026 12:57,qrfw (Binance hot wallet),TWRXj4SD,"1,980,181.66",Binance withdrawal · TX 734ebbae…d43f6d3
+06.05.2026 16:34,TWRXj4S…kw5aJx,TBR7B5N…XFFFyo,"23,380,000.00",Bridge to the EJon/HBK node · TX 1a049867…b436d2
+11.06.2026 15:16,THkSW85…NgTvep,TA6YHqB…v4zCoQ,"120,271,055.09",Primary inflow to CoQ · TX 516109e2…46c6c2
+11.06.2026 18:24,TA6YHqB…v4zCoQ,TCLYoxT…7Rd3Sy,"200,000.00",Direct transfer — branch 1 · TX f6a6dae0…478424
+11.06.2026 19:15,TCLYoxT…7Rd3Sy,TJF2gy1…Rc9g9i,"200,000.00",Branch 1 · TX 804f122c…66b980
+11.06.2026 19:37,TJF2gy1…Rc9g9i,TYnYrY9…uo7oj3,"10,000.00",Branch 1 · TX 88ec98a8…f8baa1
+11.06.2026 19:47,TJF2gy1…Rc9g9i,TYnYrY9…uo7oj3,"40,000.00",Branch 1 · TX 52ae6527…7c1d3c
+11.06.2026 20:11,TJF2gy1…Rc9g9i,TXKJAEP…PxVov9,"50,000.00",Branch 1 · TX 5864b72a…2f9a7d
+11.06.2026 20:32,TJF2gy1…Rc9g9i,TE4acQj…HrdgqY,"50,000.00",Branch 1 · TX 66af3f0a…5259d2
+11.06.2026 20:45,TJF2gy1…Rc9g9i,TE4acQj…HrdgqY,"50,000.00",Branch 1 · TX 546f430a…f0bc9b
+11.06.2026 21:45,TA6YHqB…v4zCoQ,TRjbpWL…HRykCw,"350,000.00",Direct transfer — branch 2 · TX 77cda138…831a34
+11.06.2026 21:46,TRjbpWL…HRykCw,TJBeS6Z…wx38Ys,"347,191.55",Branch 2 (99.2%) · TX 1cc6935f…9cd360
+11.06.2026 21:48,TJBeS6Z…wx38Ys,TX5XiRX…kncpke,"347,191.55",Exit — NEAR Intents · TX e17c4ae9…184e18
+11.06.2026 22:45,TRjbpWL…HRykCw,TEv5V9G…jUo1qx,"2,808.45","Branch 2 (0.8%, remainder) · TX da35404d…7770a5"
+11.06.2026 22:09,TA6YHqB…v4zCoQ,TBzrPEs…X9Ak9W,"50,000,000.00",Tranche 1 to Ak9W · TX 862d2f3c…bcaf65
+11.06.2026 22:10,TA6YHqB…v4zCoQ,TBzrPEs…X9Ak9W,"44,980,295.09",Tranche 2 to Ak9W · TX 45000790…183d04
+11.06.2026 22:21–12.06.2026 07:34,TBzrPEs…X9Ak9W,37 addresses,"23,300,000.00",Ak9W pre-freeze redistribution · 37 tx · see Hash Index
+12.06.2026 07:37,—,TBzrPEs…X9Ak9W,"72,030,295.66",Frozen by Tether · addBlackList call on the USDT TRC-20 contract — an on-chain transaction; TXID not captured in this dataset (transfer-event export only)
+12.06.2026 08:48,TA6YHqB…v4zCoQ,TLmvkxC…ySDN2H,"349,990.00",Direct transfer — branch 3 · TX 17118b4d…5a28b8
+12.06.2026 08:55,TLmvkxC…ySDN2H,TSNjMmo…GpyTjk,"349,990.00",Branch 3 · TX 77149e8b…dd2320
+12.06.2026 08:56,TSNjMmo…GpyTjk,TYnhjPV…exbRJc,"125,000.00",Branch 3 · TX f84601fa…2f23cb
+12.06.2026 08:56,TSNjMmo…GpyTjk,TEMr6te…9SPz5g,"125,000.00",Branch 3 · TX cd7adcca…7234c6
+12.06.2026 08:56,TSNjMmo…GpyTjk,TXaA8WP…gLsiVr,"99,990.00",Branch 3 · TX 5a10c762…21023e

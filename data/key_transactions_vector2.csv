@@ -1,0 +1,13 @@
+Date/Time (UTC),Sender,Recipient,Amount (USDT),Note
+06.05.2026 16:34,TWRXj4S…kw5aJx,TBR7B5N…XFFFyo,"23,380,000.00",Bridge from the CoQ node  · TX 1a049867…271b436d2
+16.05–17.05.2026 (10 tx),TFzkvma…evfGs4,TJK69Sk…8jhZDu,"18,369,839.00",Gs4 → TJK69Sk6  · 10 tx — see Hash Index (Appendix)
+16.05–17.05.2026 (10 tx),TJK69Sk…8jhZDu,TLqhGbL…6Az9tu,"18,369,839.00",TJK69Sk6 → new address  · 10 tx — see Hash Index (Appendix)
+16.05–17.05.2026 (10 tx),TFBLE5w…BpJt7H,TKRSDkF…eTHtAU,"18,369,839.00",Parallel pipe  · 10 tx — see Hash Index (Appendix)
+16.05.2026 (7 tx),TKRSDkF…eTHtAU,TJbRpiW…cpcyhf,"15,097,765.00",THtAU → main recipient  · 7 tx — see Hash Index (Appendix)
+17.05.2026 (2 tx),TKRSDkF…eTHtAU,TCR2MdQ…uC9oRx,"3,272,074.00",THtAU → oRx  · 2 tx — see Hash Index (Appendix)
+19.05.2026 (2 tx),TCR2MdQ…uC9oRx,TVD24xs…pTWJEk,"3,272,054.00",oRx → JEk (after USDD swap)  · 2 tx — see Hash Index (Appendix)
+18.05.2026 (10 tx),TXzbetD…6aUojk,TE5XmXb…eRJ1w6,"25,974,921.00",Uojk → 1w6  · 10 tx — see Hash Index (Appendix)
+18.05.2026 (10 tx),TE5XmXb…eRJ1w6,TQp4Pnt…dTvPM4,"25,974,923.00",1w6 → PM4  · 10 tx — see Hash Index (Appendix)
+18.05.2026 (10 tx),TQp4Pnt…dTvPM4,TFWoWin…nPSZqH,"25,974,924.00",PM4 → ZhH  · 10 tx — see Hash Index (Appendix)
+21.05.2026 (5 tx),TScMFDA…yV2CQx,TM77iQZ…9oveEP,"2,000,000.00",Bridge EJon → HBK  · 5 tx — see Hash Index (Appendix)
+28.05.2026 (2 tx),TVD24xs…pTWJEk,TUzmTTX…jaV3px,"5,000,000.00",Bridge HBK → EJon  · 2 tx — see Hash Index (Appendix)
