@@ -320,3 +320,56 @@ Every individual transaction underlying both movement-of-funds tables (1.3, 2.2)
 ### Vector 2
 
 *[Table: 78 rows — see data/ folder for full machine-readable version]*
+
+## Appendix — Cluster Validation (Silhouette Analysis)
+
+### A.1 Purpose
+
+The role classification in 1.5/2.4 (Recipient / Distributor / Aggregator) is defined manually, on lifespan and outgoing-transaction-count thresholds chosen by the analyst. This appendix asks a narrower, independent question: does the transaction-graph structure itself — with no lifespan or timing information, and no thresholds set by hand — favor the same number of behavioral groups? An unsupervised method run on a different feature set arriving at the same group count is corroborating evidence for a three-group structure in this network; it is not, by itself, evidence that the two classifications place the same addresses in the same groups (A.4).
+
+### A.2 Data and Method
+
+Sample: 680 addresses with combined degree (incoming + outgoing transfer count) greater than 5, pulled directly from the transaction graph — a lower-activity cut than the full 647-address FATF registry, since this test draws on all counterparties in the traced flow, not only the registry's named wallets.
+
+Features: in-degree and out-degree only, log-transformed (log1p) to reduce the skew of a small number of very high-degree hub addresses dominating the fit. No lifespan, timing, or amount data was used — see A.4.
+
+Method: k-means, swept over k = 1…7 (clustergram 0.8.1 / scikit-learn 1.9.0, `n_init=10`, `random_state=42`), with the mean silhouette score at each k as the stability diagnostic — the metric peaks at the k where clusters are most internally cohesive and most separated from each other, which is not necessarily the largest or smallest k tried.
+
+### A.3 Result
+
+| k | Silhouette score |
+|---|---|
+| 2 | 0.589 |
+| **3** | **0.664** |
+| 4 | 0.661 |
+| 5 | 0.620 |
+| 6 | 0.608 |
+| 7 | 0.605 |
+
+The score peaks at k = 3, matching the count of the manual role classes (Recipient / Distributor / Aggregator, 1.5). k = 4 is close behind (0.661) and not statistically distinguished from k = 3 by this diagnostic alone; k = 3 is reported as the better-supported reading on the basis of the peak value.
+
+### A.4 Limitations
+
+This test corroborates the *number* of groups, not the classification itself. The manual classification (1.5/2.4) is defined on lifespan and outgoing-transaction-count; this test used only in/out-degree, a different and narrower feature set, chosen because it is what the transaction graph exposes directly without a separate lifespan computation per address. A three-cluster optimum on connectivity alone is consistent with — but does not confirm — that the resulting clusters correspond address-for-address to Recipient/Distributor/Aggregator. Confirming that would require re-running this method on the same lifespan/outgoing-count features used in 1.5, which was not done here.
+
+The 680-address sample (degree > 5) under-represents the Recipient class as defined in 1.5, which is dominated by one-time, low-degree deposit addresses (0–1 outgoing transactions, 88.8% of the CoQ node per the 1.5 table) — many of those fall below the degree-5 cutoff and are absent from this test. The result should be read as describing the more active tail of the network, not the full registry.
+
+### A.5 Reproducibility
+
+```
+MATCH (w:CryptoWallet)
+WITH w, COUNT{(w)-[:TRANSFER]->()} AS out_deg,
+        COUNT{(w)<-[:TRANSFER]-()} AS in_deg
+WHERE out_deg + in_deg > 5
+RETURN w.address, in_deg, out_deg
+```
+
+```python
+import numpy as np
+from clustergram import Clustergram
+
+X = np.log1p(df[["in_deg", "out_deg"]])
+cgram = Clustergram(range(1, 8), n_init=10, random_state=42)
+cgram.fit(X)
+cgram.silhouette_score()
+```
