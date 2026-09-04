@@ -9,7 +9,7 @@ relying on a file if you did not download it directly from this repository's rel
 | `LICENSE` | 888 | `8a3ed70e429d7a89f03efc82b779499a427f4a769faaf376475134afe2521e42` |
 | `MANIFEST.md` | (this file) | — |
 | `CHAIN_OF_CUSTODY.md` | 2,972 | `16a6986b993102e57254926ff00a18dfbd6ed652127dfc01c7147a9a0f42e060` |
-| `report/REPORT.md` | 33,576 | `b13ac9fe4e7b58d4380e7de79476af13de4b9945041b95efa5127e0dbbedc301` |
+| `report/REPORT.md` | 37,566 | `bbe500da365561e55eb4c8ae0a226d53ed81994cc185277435d6cdcde986e2d7` |
 | `report/Investigation_into_Cryptoasset_Laundering_Through_the_TRON_Network.docx` | 454,460 | `a17e9cd44108f5a1a5fdf42b4037f3d02c55d9eb5a5ce7a4bb98d847bb68c9ee` |
 | `data/wallet_registry_fatf.csv` | 35,340 | `822c8a71dec97ee5f7f1b50d804352a269e9d67ea729674b0c02fb868dc9054b` |
 | `data/transaction_hash_index.csv` | 20,416 | `e562a55a47e1d02dd98bec5028d62b16a8c2c641525533fb406fa741e8dfff62` |

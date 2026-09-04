@@ -43,6 +43,14 @@ verified exchange-deposit attribution.
 - Monero conversion referenced in public reporting is not observable on TRON or any public ledger and
   is not independently traced in this dataset.
 
+## Addenda
+
+- **Appendix — Cluster Validation (Silhouette Analysis)**, added to `report/REPORT.md` 2026-09-04.
+  Derived independently from the original `.docx`: pulled live from a Neo4j graph built on the same
+  `data/master_transactions.csv` and `data/wallet_registry_fatf.csv`, via the Cypher query and Python
+  code reproduced in that appendix (A.5). Tooling: `clustergram` 0.8.1, `scikit-learn` 1.9.0.
+  `MANIFEST.md` was updated to reflect the new file hash.
+
 ## Integrity verification
 
 Every file's SHA-256 checksum is listed in `MANIFEST.md`. To verify a file has not been altered since
